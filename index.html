@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        #navbar {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 0;
+            border-bottom: 1px solid rgb(159, 157, 157);
+        }
+
+        #header1 {
+            display: flex;
+            gap: 15px;
+        }
+
+        #header1 a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        #header-2 {
+            display: none;
+            font-size: 20px;
+        }
+
+        #navbar2 {
+            display: flex;
+        }
+
+        #header-3 {
+            display: none;
+
+        }
+
+
+        @media (max-width:770px) {
+
+            #header1 {
+                width: 500px;
+                height: 200px;
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                align-items: start;
+                top: 120px;
+                left: 50px;
+
+            }
+
+            #header-2 {
+                display: flex;
+                font-size: 20px;
+                color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <h1>LOGO</h1>
+        </div>
+
+        <div id="header1">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contect us</a>
+        </div>
+        <div id="navbar2">
+            <div id="header-2">
+                <i style=" color: red;" class="fa-solid fa-grip-lines"></i>
+            </div>
+            <div id="header-3">
+                <i class="fa-solid fa-x"></i>
+            </div>
+        </div>
+
+    </nav>
+    <script src="index.js"></script>
+</body>
+
+</html>
